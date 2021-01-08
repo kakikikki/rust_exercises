@@ -41,7 +41,7 @@ fn main() {
             let string = &name[name_length..];
             let name = &name[..name_length];
 
-            // Insert employee name info departament
+            // Insert employee name into departament
             if !&string.is_empty() && &string[..4] == " to "  {
                 let departament = (&string[4..]).to_string();
                 let map = departaments.entry(departament).or_insert(Vec::<String>::new());
